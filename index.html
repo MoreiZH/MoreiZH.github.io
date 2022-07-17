@@ -71,9 +71,9 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Hexo your own blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Hexo-your-own-blog-md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/07/17/Hexo%20your%20own%20blog/" class="article-date">
+    <a href="/2022/07/17/Hexo-your-own-blog-md/" class="article-date">
   <time class="dt-published" datetime="2022-07-17T20:21:48.000Z" itemprop="datePublished">2022-07-17</time>
 </a>
     
@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/17/Hexo%20your%20own%20blog/">firstPage.md</a>
+      <a class="p-name article-title" href="/2022/07/17/Hexo-your-own-blog-md/">firstPage2.md</a>
     </h1>
   
 
@@ -115,7 +115,65 @@ deploy:<br>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/17/Hexo%20your%20own%20blog/" data-id="cl5pvu51m00006f4104w4gn79" data-title="firstPage.md" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/17/Hexo-your-own-blog-md/" data-id="cl5pw1ov10000cn41chj4hi6d" data-title="firstPage2.md" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-firstPage" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/07/17/firstPage/" class="article-date">
+  <time class="dt-published" datetime="2022-07-17T20:21:48.000Z" itemprop="datePublished">2022-07-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/07/17/firstPage/">Hexo your own blog.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="1-Install-Requirements-nodejs-npm"><a href="#1-Install-Requirements-nodejs-npm" class="headerlink" title="1. Install Requirements (nodejs,npm)"></a>1. Install Requirements (nodejs,npm)</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install node</span><br></pre></td></tr></table></figure>
+<h2 id="1-1-Check-version"><a href="#1-1-Check-version" class="headerlink" title="1.1 Check version"></a>1.1 Check version</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<h1 id="2-Install-hexo-cli"><a href="#2-Install-hexo-cli" class="headerlink" title="2. Install hexo-cli"></a>2. Install hexo-cli</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h1 id="3-Configuration"><a href="#3-Configuration" class="headerlink" title="3. Configuration"></a>3. Configuration</h1><h2 id="3-1-hexo"><a href="#3-1-hexo" class="headerlink" title="3.1 hexo"></a>3.1 hexo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Path_to_blog</span><br><span class="line">hexo init</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h2 id="3-2-git"><a href="#3-2-git" class="headerlink" title="3.2 git"></a>3.2 git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;youremail&quot;</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;youremail&quot;</span></span><br><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub  <span class="comment"># where your store the key, copy it to your Github</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-2-Github-personal-token"><a href="#3-2-Github-personal-token" class="headerlink" title="3.2 Github personal token"></a>3.2 Github personal token</h2><p>Go to your Github &gt; Settings &gt; Developer settings &gt; Generate new token<br>copy the tokens, and set it in your MAC key chain<br>Details can be found in <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=iKf8-hhdWjs">here</a><br><em>If you cannot find github in your keychain, you should firstly use the token as a passward to access your github.</em></p>
+<h1 id="4-create-your-fisrt-page"><a href="#4-create-your-fisrt-page" class="headerlink" title="4. create your fisrt page"></a>4. create your fisrt page</h1><h2 id="4-1-Push-hexo-to-github"><a href="#4-1-Push-hexo-to-github" class="headerlink" title="4.1 Push hexo to github"></a>4.1 Push hexo to github</h2><h3 id="4-1-1-Create-repository-of-username-githug-io"><a href="#4-1-1-Create-repository-of-username-githug-io" class="headerlink" title="4.1.1 Create repository of username.githug.io"></a>4.1.1 Create repository of username.githug.io</h3><p>new repository &gt; edit name as username.githug.io &gt; public</p>
+<h3 id="4-1-2-Connect-to-github"><a href="#4-1-2-Connect-to-github" class="headerlink" title="4.1.2 Connect to github"></a>4.1.2 Connect to github</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install hexo-deployer-git --save</span><br><span class="line">vim Path_to_blog/_config.yml</span><br></pre></td></tr></table></figure>
+<p>*edit the deploy part as following: <br>
+deploy:<br>
+  type: git<br>
+  repo: git@github.com:your_page/Johnson8888.github.io.git<br>
+  branch: master*</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-2-Create-and-edit-your-first-page"><a href="#4-2-Create-and-edit-your-first-page" class="headerlink" title="4.2 Create and edit your first page"></a>4.2 Create and edit your first page</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new firstPage.md</span><br><span class="line">vim <span class="built_in">source</span>/_posts/firstPage.md  <span class="comment"># your can edit it in any text editor you like (e.g. VScode)</span></span><br><span class="line">git g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/07/17/firstPage/" data-id="cl5pw1ov90003cn41citq8mjl" data-title="Hexo your own blog.md" class="article-share-link">Share</a>
       
       
       
@@ -168,7 +226,7 @@ deploy:<br>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/17/hello-world/" data-id="cl5pvu52700036f41gibl6he2" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/17/hello-world/" data-id="cl5pw1ov60001cn418hk11wxz" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -225,7 +283,11 @@ deploy:<br>
       <ul>
         
           <li>
-            <a href="/2022/07/17/Hexo%20your%20own%20blog/">firstPage.md</a>
+            <a href="/2022/07/17/Hexo-your-own-blog-md/">firstPage2.md</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/17/firstPage/">Hexo your own blog.md</a>
           </li>
         
           <li>
